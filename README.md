@@ -1,36 +1,34 @@
-# django-orm-watching-storage
-This is a simple web site, written on django for educational purposes. 
+# Пульт охраны банка.
+Программа отслеживает посетителей, которые заходят в банковское хранилище. 
 
-## Prerequisites
+## Как установить
 
-Python3 should be already installed.
+Python3 должен быть уже установлен. Затем используйте pip (или pip3, есть конфликт с Python2) для установки зависимостей:
 
-## How to install and configure
-
-- ```
-  $ git clone https://github.com/AleksandrBara/django-orm-watching-storage
-  $ cd watching-storage
-  $ pip install -r requirements.txt
-  $ python3 -m venv ./venv
-  $ . ./venv/bin/activate
-  ```
-- Create and fill `.env`-file in the project root directory:  
+```bash
+pip install -r requirements.txt
 ```
-   DB_HOST=checkpoint.devman.org
-   DB_PORT=<database port>
-   DB_NAME=<database name>
-   DB_USER=<database user>
-   DB_PASSWORD=<database password>
-   DEBUG=false
-   SECRET_KEY=<your secret key>
-```
+Создайте `.env`-файл в корневом каталоге с программой, добавьте значения:  
 
-## How to run
+-SECRET_KEY - Секретный ключ для конкретной установки Django.
+
+-ALLOWED_HOSTS - список доменов, которые может обслуживать сайт.
+
+-DB_PORT - настройки для подключения к базе данных.
+
+-DB_NAME - настройки для подключения к базе данных.
+
+-DB_PASSWORD - настройки для подключения к базе данных.
+
+-DB_USER - настройки для подключения к базе данных.
+
+
+## Как запустить.
 
   ```bash
-      $ python main1.py runserver
+      $ python manage.py runserver
   ```
+Программа доступна по адресу  [127.0.0.1:8000]( 127.0.0.1:8000 ) 
+### Цель проекта
 
-## Project Goals
-
-The code is written for educational purposes on online-course for web-developers [dvmn.org](https://dvmn.org/).
+Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/).
