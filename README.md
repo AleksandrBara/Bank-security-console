@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ## Как запустить.
 
   ```bash
-      $ python manage.py runserver
+      $ python manage.py runserver 0.0.0.0:8000
   ```
 Программа доступна по адресу  [127.0.0.1:8000]( 127.0.0.1:8000 ) 
 ### Цель проекта
